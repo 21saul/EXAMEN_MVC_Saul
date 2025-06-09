@@ -39,6 +39,20 @@ public class Model {
         aux.setVelocidad(aux.getVelocidad() + velocidad);
     };
 
+
+    /**
+     * Avanza la cantidad de metros para un coche según su matrícula
+     * @param matricula
+     * @param metros
+     * @return
+     */
+    public static boolean avanzar(String matricula, int metros) {
+        Coche c = getCoche(matricula);
+        c.avanzar(metros);
+        return true;
+    }
+
+
     /**
      * Añade la gasolina a un coche
      * @return
@@ -49,16 +63,5 @@ public class Model {
         return true;
     }
 
-    /**
-     * Avanza la cantidad de metros para un coche según su matrícula
-     * @param matricula
-     * @param m
-     * @return
-     */
-    public static boolean avanzar(String matricula, int m) {
-        Coche c = getCoche(matricula);
-        c.avanzar(m);
-        return true;
-    }
 
 }

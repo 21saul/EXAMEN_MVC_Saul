@@ -7,7 +7,7 @@ public class Coche {
 
 
     /**
-     * Constructor de la clase Coche, va a comenzar con 100 litros de gasolina
+     * Constructor de la clase Coche, va a comenzar con 50 litros de gasolina
      * y como distancia partiendo del 0
      * @param mat
      * @param modelo
@@ -16,7 +16,7 @@ public class Coche {
         this.setMatricula(mat);
         this.setModelo(modelo);
         this.setVelocidad(0);
-        this.gasolina = 100;
+        this.gasolina = 50;
         this.distancia = 0;
     }
 

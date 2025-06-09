@@ -67,8 +67,6 @@ public class View {
         return sc.nextInt();
     }
 
-    public static void mensax(String mensaje) {
-        System.out.println(mensaje);
-    }
+
 
 }

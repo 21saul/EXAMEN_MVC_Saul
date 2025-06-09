@@ -63,7 +63,7 @@ public class Controller {
         String matricula = View.pedirMatricula();
         int litros = View.pedirGasolina();
         Model.echarGasolina(matricula, litros);
-        View.mensax("Metiste " + litros + " litros de gasolin en el coche con la matrícula: " + matricula);
+        System.out.println("Metiste " + litros + " litros de gasolin en el coche con la matrícula: " + matricula);;
         return true;
     }
 
@@ -75,7 +75,7 @@ public class Controller {
         String matricula = View.pedirMatricula();
         int metros = View.pedirDistancia();
         Model.avanzar(matricula, metros);
-        View.mensax("Se han avanzado " + metros + " en el coche matricula " + matricula);
+        System.out.println("Se han avanzado " + metros + " metros en el coche con matricula " + matricula);
         return true;
     }
 
